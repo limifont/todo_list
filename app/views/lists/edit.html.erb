@@ -1,0 +1,10 @@
+<h1>Edit Post</h1>
+<%= form_for @list do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :description %>
+  <%= f.text_field :description %>
+  <%= f.label :coplete %>
+  <%= f.check_box :complete %>
+  <%= f.submit %>
+<% end %>
